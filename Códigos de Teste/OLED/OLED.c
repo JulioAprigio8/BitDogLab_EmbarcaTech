@@ -7,7 +7,7 @@
 #include "hardware/i2c.h"
 
 // I2C defines
-#define I2C_PORT i2c0
+#define I2C_PORT i2c1
 #define I2C_SDA 14
 #define I2C_SCL 15
 
@@ -55,7 +55,7 @@ int main() {
         }
 
         // Exibe uma linha
-        ssd1306_draw_line(ssd, 10, 40, 100, 50, true);
+        ssd1306_draw_line(ssd, 30, 60, 120, 60, true);
 
         // Atualiza o display
         render_on_display(ssd, &frame_area);
